@@ -1,0 +1,15 @@
+prometheus:
+  prometheusSpec:
+    scrapeInterval: 15s
+    evaluationInterval: 15s
+    podMonitorSelectorNilUsesHelmValues: false
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelector: {}
+    serviceMonitorSelector: {}
+
+grafana:
+  enabled: true
+  adminPassword: admin
+
+alertmanager:
+  enabled: false
